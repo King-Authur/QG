@@ -119,11 +119,11 @@ int search_middle(Node*p);
 /**
  *  @name        : int menu();
  *	@description : present the functions of the program  
- *	@param		 : None
+ *	@param		 : p
  *	@return		 : user's choose
  *  @notice      : None
  */ 
- int menu();
+ int menu(Node*p);
 
  /**************************************************************
 *	End-Multi-Include-Prevent Section

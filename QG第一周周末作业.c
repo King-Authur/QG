@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
 	int run=1;
 	while(run)
 	{
-		switch(run=menu())
+		switch(run=menu(head))
 		{
 			case 0:
 				printf("感谢使用，祝您生活愉快\n"); 

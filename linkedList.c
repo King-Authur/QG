@@ -228,21 +228,26 @@ int search_middle(Node*p)
  *	@return		 : user's choose
  *  @notice      : None
  */ 
- int menu()
+ int menu(Node*p)
 {
 	printf("\n------功能表------\n");
 	printf("1、创建链表(新链表会覆盖旧链表哦)\n");
-	printf("2、查找节点\n");
-	printf("3、修改节点\n");
-	printf("4、插入节点\n");
-	printf("5、删除节点\n");
-	printf("6、清空链表\n");
-	printf("7、打印链表\n");
-	printf("8、查找链表中点\n"); 
-	printf("9、反转奇偶位置的节点\n"); 
+	if(p!=NULL)
+	{
+		printf("2、查找节点\n");
+		printf("3、修改节点\n");
+		printf("4、插入节点\n");
+		printf("5、删除节点\n");
+		printf("6、清空链表\n");
+		printf("7、打印链表\n");
+		printf("8、查找链表中点\n"); 
+		printf("9、反转奇偶位置的节点\n"); 	
+	}
 	printf("输入0以退出程序\n------------------\n");
 	printf("请输入要使用的功能(数字):");
 	int num;
 	scanf("%d",&num);
+	if((p==NULL&&num!=1)||(p==NULL&&num!=2))
+		return 10;
 	return num;
 }
